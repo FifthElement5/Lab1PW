@@ -80,6 +80,7 @@ public class zad3 {
         for (int num : tablica) {
             System.out.print(num + " ");
         }
+
     }
 }
 

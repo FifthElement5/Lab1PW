@@ -9,5 +9,11 @@ public class main {
         double wynik = p1.odleglosc(p2);
         System.out.println(wynik);
 
+        double wynik1 = p1.odlegloscO();
+        System.out.println(wynik1);
+
+        System.out.println(p2.toString());  // Jawne wywołanie metody toString()
+
+
     }
 }

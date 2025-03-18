@@ -37,4 +37,14 @@ void rysuj2D() {
     public double odleglosc(Space2D inny) {
         return Math.sqrt(Math.pow(this.x - inny.x, 2) + Math.pow(this.y - inny.y, 2));
     }
+
+    // Oblicza odległość od punktu (0,0)
+    public double odlegloscO() {
+        return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+    }
+
+    public String toString() {
+        return "(" + this.x + ", " + this.y + ")";
+    }
+
 }
