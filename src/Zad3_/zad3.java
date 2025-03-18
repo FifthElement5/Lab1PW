@@ -19,7 +19,7 @@ public class zad3 {
         //wypisz zawartosc
 
         for (int i = 0; i < N; i++) {
-            System.out.println("nr" + i + " " +tablica[i]);
+            System.out.println(" nr" + i + " " +tablica[i]);
         }
         //znajdz najmniejszy i najwiekszy element
         int min = tablica[0];
@@ -68,6 +68,17 @@ public class zad3 {
         for(int i = N - 1; i >= 0; i--)
         {
         System.out.println("nr" + i + " " + tablica[i]);
+        }
+
+        for (int i = 0; i < N / 2; i++) {
+            int temp = tablica[i];
+            tablica[i] = tablica[N - 1 - i];
+            tablica[N - 1 - i] = temp;
+        }
+
+        // Wypisanie odwróconej tablicy
+        for (int num : tablica) {
+            System.out.print(num + " ");
         }
     }
 }
