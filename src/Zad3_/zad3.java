@@ -64,6 +64,11 @@ public class zad3 {
         }
         float srednia = (float) suma/N;
         System.out.println(srednia);
+
+        for(int i = N - 1; i >= 0; i--)
+        {
+        System.out.println("nr" + i + " " + tablica[i]);
+        }
     }
 }
 
