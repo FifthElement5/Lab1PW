@@ -30,4 +30,5 @@ public class Space2D {
     public void setX(int x) {
         this.x = x;
     }
+
 }
