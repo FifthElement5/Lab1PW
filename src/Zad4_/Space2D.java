@@ -42,7 +42,10 @@ void rysuj2D() {
     public double odlegloscO() {
         return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
     }
-
+public double obwodT(double x, double y, double z) {
+        double obwod = x + y + z;
+        return obwod;
+}
     public String toString() {
         return "(" + this.x + ", " + this.y + ")";
     }
