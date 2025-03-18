@@ -30,5 +30,11 @@ public class Space2D {
     public void setX(int x) {
         this.x = x;
     }
+void rysuj2D() {
+        System.out.println("[" + this.x + "," + this.y + "]");
+}
 
+    public double odleglosc(Space2D inny) {
+        return Math.sqrt(Math.pow(this.x - inny.x, 2) + Math.pow(this.y - inny.y, 2));
+    }
 }
