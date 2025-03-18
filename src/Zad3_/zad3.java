@@ -56,12 +56,13 @@ public class zad3 {
             }
         }
 
+        //srednia arytmetyczna
         System.out.println(" 1= " + min1 + " 2= " + min2 + " 3= " + min3);
         int suma = 0;
         for(int i = 0; i < N; i++) {
             suma += tablica[i];
         }
-        float srednia = suma/N;
+        float srednia = (float) suma/N;
         System.out.println(srednia);
     }
 }
