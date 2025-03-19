@@ -31,4 +31,14 @@ public class Space3D extends Space2D {
     public double odleglosc(Space3D inny) {
         return Math.sqrt(Math.pow(this.x - inny.x, 2) + Math.pow(this.y - inny.y, 2) + Math.pow(this.z - inny.z, 2));
     }
+
+
+    public double odlegloscO() {
+        return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2) + Math.pow(this.z, 2));
+    }
+
+    @Override
+    public String toString() {
+        return "(" + this.getX() + ", " + this.getY() + ", " + this.z + ")";
+    }
 }

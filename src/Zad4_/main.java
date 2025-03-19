@@ -12,7 +12,7 @@ public class main {
 
 
         double wynik1 = p1.odlegloscO();
-        System.out.println(wynik1);
+        System.out.println("odleglosc od 0 : " + wynik1);
 
         System.out.println(p2.toString());  // Jawne wywołanie metody toString()
 
@@ -23,12 +23,18 @@ public class main {
         System.out.println("pole trojkat to: " + pole);
 System.out.println("3D ////////////////:");
         Space3D punkt1 = new Space3D(1, 2, 3);
+        Space3D punkt2 = new Space3D(4, 5, 6);
 
-        
 
         punkt1.rysuj();
+        double wynik2 = punkt1.odlegloscO();
 
+        System.out.println("odleglosc 3d od 0: " + wynik2);
 
+double wynik3 = punkt1.odleglosc(punkt2);
+System.out.println("odleglosc punktu 1 od 2: " + wynik3);
+
+System.out.println(punkt2.toString());
 
     }
 }
