@@ -7,7 +7,7 @@ public class main {
         Space2D p3 = new Space2D(3,3);
 
         System.out.println(p1.getX());
-        p1.rysuj2D();
+        p1.rysuj();
 
 
 
@@ -21,6 +21,9 @@ public class main {
 
         double pole = Space2D.obwodT(p1, p2, p3);
         System.out.println("pole trojkat to: " + pole);
+
+        Spaced3D punkt1 = new Spaced3D();
+        System.out.println(punkt1);
 
     }
 }

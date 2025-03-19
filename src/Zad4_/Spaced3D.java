@@ -11,4 +11,18 @@ public class Spaced3D extends Space2D {
         super(x, y);
         this.z = z;
     }
+
+    public double getZ() {
+        return z;
+    }
+
+    public void setZ(double z) {
+        this.z = z;
+    }
+
+    // Nadpisanie metody rysuj() w wersji 3D
+    @Override
+    void rysuj() {
+        System.out.println("[" + this.x + "," + this.y + "," + this.z + "]");
+    }
 }

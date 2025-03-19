@@ -30,7 +30,9 @@ public class Space2D {
     public void setX(double x) {
         this.x = x;
     }
-void rysuj2D() {
+
+
+public void rysuj() {
         System.out.println("[" + this.x + "," + this.y + "]");
 }
 
