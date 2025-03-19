@@ -19,7 +19,8 @@ public class main {
           double obwod = Space2D.obwodT(p1, p2, p3);
           System.out.println("obwod trojkta to : " + obwod);
 
-
+        double pole = Space2D.obwodT(p1, p2, p3);
+        System.out.println("pole trojkat to: " + pole);
 
     }
 }

@@ -68,7 +68,7 @@ public static double obwodT(Space2D p1, Space2D p2, Space2D p3) {
         System.out.println("bok3: " + odleglosc3);
 
         double polowa =  (odleglosc1 + odleglosc2 + odleglosc3)/2;
-        double pole = Math.sqrt(polowa * (polowa - a) * (polowa - b) * (polowa - c));
+        double pole = Math.sqrt(polowa * (polowa - odleglosc1) * (polowa - odleglosc2) * (polowa - odleglosc3));
         return pole;
 
     }
