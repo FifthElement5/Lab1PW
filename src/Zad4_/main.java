@@ -16,14 +16,10 @@ public class main {
 
         System.out.println(p2.toString());  // Jawne wywołanie metody toString()
 
-        double odleglosc1 = p1.odleglosc(p2);
-        System.out.println("bok1: " + odleglosc1);
-        double odleglosc2 = p2.odleglosc(p3);
-        System.out.println("bok2: " + odleglosc2);
-        double odleglosc3 = p3.odleglosc(p1);
-        System.out.println("bok3: " + odleglosc3);
+          double obwod = Space2D.obwodT(p1, p2, p3);
+          System.out.println("obwod trojkta to : " + obwod);
 
-        obwodT()
+
 
     }
 }
