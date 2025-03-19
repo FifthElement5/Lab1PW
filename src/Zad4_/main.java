@@ -21,9 +21,14 @@ public class main {
 
         double pole = Space2D.obwodT(p1, p2, p3);
         System.out.println("pole trojkat to: " + pole);
+System.out.println("3D ////////////////:");
+        Space3D punkt1 = new Space3D(1, 2, 3);
 
-        Spaced3D punkt1 = new Spaced3D();
-        System.out.println(punkt1);
+        
+
+        punkt1.rysuj();
+
+
 
     }
 }
