@@ -41,4 +41,30 @@ public class Space3D extends Space2D {
     public String toString() {
         return "(" + this.getX() + ", " + this.getY() + ", " + this.z + ")";
     }
+
+    //stayczna metoda obwod
+    public static double obwodT(Space3D p1, Space3D p2, Space3D p3) {
+        double odleglosc1 = p1.odleglosc(p2);
+        System.out.println("bok1: " + odleglosc1);
+        double odleglosc2 = p2.odleglosc(p3);
+        System.out.println("bok2: " + odleglosc2);
+        double odleglosc3 = p3.odleglosc(p1);
+        System.out.println("bok3: " + odleglosc3);
+
+        return odleglosc1 + odleglosc2 + odleglosc3;
+    }
+
+    public static double poleT(Space3D p1, Space3D p2, Space3D p3) {
+        double odleglosc1 = p1.odleglosc(p2);
+        System.out.println("bok1: " + odleglosc1);
+        double odleglosc2 = p2.odleglosc(p3);
+        System.out.println("bok2: " + odleglosc2);
+        double odleglosc3 = p3.odleglosc(p1);
+        System.out.println("bok3: " + odleglosc3);
+
+        double polowa =  (odleglosc1 + odleglosc2 + odleglosc3)/2;
+        double pole = Math.sqrt(polowa * (polowa - odleglosc1) * (polowa - odleglosc2) * (polowa - odleglosc3));
+        return pole;
+
+    }
 }

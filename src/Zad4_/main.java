@@ -24,7 +24,7 @@ public class main {
 System.out.println("3D ////////////////:");
         Space3D punkt1 = new Space3D(1, 2, 3);
         Space3D punkt2 = new Space3D(4, 5, 6);
-
+        Space3D punkt3 = new Space3D(1, 3, 2);
 
         punkt1.rysuj();
         double wynik2 = punkt1.odlegloscO();
@@ -35,6 +35,14 @@ double wynik3 = punkt1.odleglosc(punkt2);
 System.out.println("odleglosc punktu 1 od 2: " + wynik3);
 
 System.out.println(punkt2.toString());
+double obwod3D = Space3D.obwodT(punkt1, punkt2, punkt3);
+System.out.println("Obwod 3d: " + obwod3D);
+
+double pole3D = Space3D.poleT(punkt1, punkt2, punkt3);
+System.out.println("Pole 3D: " + pole3D);
+
+
+
 
     }
 }
